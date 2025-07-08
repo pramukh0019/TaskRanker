@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback, useMemo } from "react"
 import { Outlet } from "react-router-dom"
 import { Circle, TrendingUp, Zap, Clock } from "lucide-react"
 import Navbar from "./Navbar"
-import Sidebar from "./Sidebar"
+
 import axios from "axios"
 
 const Layout = ({ user, onLogout }) => {
@@ -98,7 +98,7 @@ const Layout = ({ user, onLogout }) => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar user={user} onLogout={onLogout} />
-      <Sidebar user={user} tasks={tasks}/>
+      
 
       <div className="ml-0 xl:ml-64 lg:ml-64 md:ml-16 pt-16 p-3 sm:p-4 md:p-4 transition-all duration-300">
         <div className="grid grid-cols-1 xl:grid-cols-3 gap-4 sm:gap-6">

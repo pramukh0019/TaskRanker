@@ -93,43 +93,6 @@ export const securityFields = [
     { name: "confirm", placeholder: "Confirm Password" },
 ];
 
-// SIDEBAR 
-export const menuItems = [
-    { text: "Dashboard", path: "/", icon: <Home className="w-5 h-5" /> },
-    { text: "Pending Tasks", path: "/pending", icon: <ListChecks className="w-5 h-5" /> },
-    { text: "Completed Tasks", path: "/complete", icon: <CheckCircle2 className="w-5 h-5" /> },
-]
-
-export const SIDEBAR_CLASSES = {
-    desktop: "hidden md:flex flex-col fixed h-full w-20 lg:w-64 bg-white/90 backdrop-blur-sm border-r border-purple-100 shadow-sm z-20 transition-all duration-300",
-    mobileButton: "absolute md:hidden top-25 left-5 z-50 bg-purple-600 text-white p-2 rounded-full shadow-lg hover:bg-purple-700 transition",
-    mobileDrawerBackdrop: "fixed inset-0 bg-black/40 backdrop-blur-sm",
-    mobileDrawer: "absolute top-0 left-0 w-64 h-full bg-white/90 backdrop-blur-md border-r border-purple-100 shadow-lg z-50 p-4 flex flex-col space-y-6",
-}
-
-export const LINK_CLASSES = {
-    base: "group flex items-center px-4 py-3 rounded-xl transition-all duration-300",
-    active: "bg-gradient-to-r from-purple-50 to-fuchsia-50 border-l-4 border-purple-500 text-purple-700 font-medium shadow-sm",
-    inactive: "hover:bg-purple-50/50 text-gray-600 hover:text-purple-700",
-    icon: "transition-transform duration-300 group-hover:scale-110 text-purple-500",
-    text: "text-sm font-medium ml-2",
-}
-
-export const PRODUCTIVITY_CARD = {
-    container: "bg-purple-50/50 rounded-xl p-3 border border-purple-100",
-    header: "flex items-center justify-between mb-2",
-    label: "text-xs font-semibold text-purple-700",
-    badge: "text-xs bg-purple-200 text-purple-700 px-2 py-0.5 rounded-full",
-    barBg: "w-full h-2 bg-purple-200 rounded-full overflow-hidden",
-    barFg: "h-full bg-gradient-to-r from-fuchsia-500 to-purple-600 animate-pulse",
-}
-
-export const TIP_CARD = {
-    container: "bg-gradient-to-r from-purple-50 to-fuchsia-50 rounded-xl p-4 border border-purple-100",
-    iconWrapper: "p-2 bg-purple-100 rounded-lg",
-    title: "text-sm font-semibold text-gray-800",
-    text: "text-xs text-gray-600 mt-1",
-}
 
 // SIGNUP 
 export const FIELDS = [

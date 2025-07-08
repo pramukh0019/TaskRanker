@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route, Navigate, useNavigate, Outlet } from 'react-router-dom';
 import Layout from './components/Layout';
 import Dashboard from './pages/Dashboard';
-import Pending from './pages/Pending';
-import Complete from './pages/Complete';
+
 import Profile from './components/Profile';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
@@ -73,9 +72,7 @@ const App = () => {
         }>
 
         <Route index element={<Dashboard />} />
-        <Route path="pending" element={<Pending />} />
-        <Route path="complete" element={<Complete />} />
-        <Route
+         <Route
           path="profile"
           element={<Profile user={currentUser} setCurrentUser={setCurrentUser} onLogout={handleLogout} />}
         />
